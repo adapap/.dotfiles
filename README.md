@@ -6,7 +6,7 @@ Collection of editor, terminal, and other configuration settings.
 
 `settings.json` - configures functionality, custom keybindings, themes, extensions, and other editor settings in VSCode
 
-*Until settings are saved on Microsoft account (cloud), use `shan.code-settings-sync` extension.*
+*Until settings are saved on Microsoft account (cloud), use extension:* `shan.code-settings-sync`
 
 ## Config Files
 *Project or language specific configuration files.*
@@ -17,4 +17,5 @@ Collection of editor, terminal, and other configuration settings.
 *Modifying native or Windows-specific programs.*
 
 `Cmder/config` - folder containing settings to modify Cmder
-`Cmder/OpenCmder.reg` - allows opening Cmder through the context menu
+- Add the Anonymous Pro font [here](https://github.com/AmrEldib/cmder-powerline-prompt).
+- `Cmder/OpenCmder.reg` - allows opening Cmder through the context menu
