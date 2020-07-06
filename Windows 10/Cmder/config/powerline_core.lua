@@ -87,10 +87,6 @@ colorWhite = {
 	foreground = ansiFgClrWhite,
 	background = ansiBgClrWhite
 }
-colorLightgray = {
-    foreground = ansiFgClrLightgray,
-    background = ansiBgClrLightgray
-}
 -- Variables to maintain prompt state
 currentSegments = ""
 currentFillColor = colorBlue.background

@@ -17,5 +17,7 @@ Collection of editor, terminal, and other configuration settings.
 *Modifying native or Windows-specific programs.*
 
 `Cmder/config` - folder containing settings to modify Cmder
-- Add the Anonymous Pro font [here](https://github.com/AmrEldib/cmder-powerline-prompt).
+- Recommended Font: Source Code Pro for Powerline
+- (legacy) Add the Anonymous Pro font [here](https://github.com/AmrEldib/cmder-powerline-prompt).
+- (legacy) Add the Hack NF font for VSCode [here](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack#quick-installation)
 - `Cmder/OpenCmder.reg` - allows opening Cmder through the context menu
