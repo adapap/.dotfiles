@@ -1,12 +1,8 @@
 # .dotfiles
 Collection of editor, terminal, and other configuration settings.
 
-## .vscode
-*A folder that allows for VSCode settings for a workspace.*
-
-`settings.json` - configures functionality, custom keybindings, themes, extensions, and other editor settings in VSCode
-
-*Until settings are saved on Microsoft account (cloud), use extension:* `shan.code-settings-sync`
+## .vscode - Outdated
+*VSCode updated to have settings sync through Github 🔥*
 
 ## Config Files
 *Project or language specific configuration files.*
@@ -21,3 +17,6 @@ Collection of editor, terminal, and other configuration settings.
 - (legacy) Add the Anonymous Pro font [here](https://github.com/AmrEldib/cmder-powerline-prompt).
 - (legacy) Add the Hack NF font for VSCode [here](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack#quick-installation)
 - `Cmder/OpenCmder.reg` - allows opening Cmder through the context menu
+
+## Zsh
+*Guide to setting up `oh-my-zsh` on Mac/Windows*
