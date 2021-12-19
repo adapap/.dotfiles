@@ -1,0 +1,10 @@
+## Uncomment for first-time installation (run as admin!)
+# Install-Module oh-my-posh -Scope CurrentUser -AllowClobber
+# Install-Module posh-git -Scope CurrentUser -AllowClobber
+# Install-Module git-aliases -Scope CurrentUser -AllowClobber
+# Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+
+Import-Module oh-my-posh
+Import-Module posh-git
+Import-Module git-aliases -DisableNameChecking
+Set-PoshPrompt adapap-theme

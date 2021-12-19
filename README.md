@@ -1,16 +1,12 @@
 # .dotfiles
 Collection of editor, terminal, and other configuration settings.
-
-## .vscode - Outdated
-*VSCode updated to have settings sync through Github 🔥*
-
-## Config Files
-*Project or language specific configuration files.*
-
-`.editorconfig` - automatically formats code to match these settings in a workspace
-
 ## Windows 10
 *Modifying native or Windows-specific programs.*
+
+`Windows Terminal`
+- Download Windows Terminal from Microsoft Store
+- Follow the steps in $PROFILE and update your local configuration
+- Use a font that renders Powerline symbols (e.g. MesloLGS NF)
 
 `Cmder/config` - folder containing settings to modify Cmder
 - Recommended Font: Source Code Pro for Powerline
@@ -20,3 +16,11 @@ Collection of editor, terminal, and other configuration settings.
 
 ## Zsh
 *Guide to setting up `oh-my-zsh` on Mac/Windows*
+
+## .vscode - Outdated
+*VSCode updated to have settings sync through Github 🔥*
+
+## Config Files
+*Project or language specific configuration files.*
+
+`.editorconfig` - automatically formats code to match these settings in a workspace
