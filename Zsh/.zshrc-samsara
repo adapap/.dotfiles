@@ -23,20 +23,38 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-plugins=(git zsh-autosuggestions zsh-cwd zsh-syntax-highlighting)
+plugins=(git gitfast zsh-autosuggestions zsh-cwd zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # Github CLI
 compctl -K _gh gh
 
+export ANDROID_HOME=/Users/adam/Library/Android/sdk
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/tools/bin:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/emulator:$PATH
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+
 alias adb-debug="adb shell input keyevent 82"
 alias troy-admin="troy-run-android com.samsara.admin"
 alias troy-design="troy-run-android com.samsara.designsystem"
-alias gprune="git removed-branches --prune --force"
+alias gclean="git branch | fzf --multi | xargs git branch -D"
 alias gg="gfa && grbi origin/master"
+alias gch="git branch | fzf | xargs git checkout"
+alias mdmserver="GOOGLE_APPLICATION_CREDENTIALS="/home/ubuntu/samsara-mdm-sdk-f07bfcc2f671.json" GRPC_PORT=8001 taskrunner mdmserver"
 cwd
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 eval "$(direnv hook zsh)"
+autoload -Uz compinit && compinit
+
+eval "$(pyenv init -)"
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+autoload bashcompinit
+bashcompinit
+if [ -f /Users/adam/co/backend/bin/taskrunner-completion.bash ]; then
+  . /Users/adam/co/backend/bin/taskrunner-completion.bash
+fi
