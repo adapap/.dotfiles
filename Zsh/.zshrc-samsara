@@ -10,6 +10,22 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+ZSH_CUSTOM=$ZSH/custom
+
+# Install zsh plugins
+# Parse command-line arguments
+if [[ ! -e $ZSH_CUSTOM/themes/powerlevel10k ]]; then
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+fi
+if [[ ! -e $ZSH_CUSTOM/plugins/zsh-autosuggestions ]]; then
+  git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+fi
+if [[ ! -e $ZSH_CUSTOM/plugins/zsh-cwd ]]; then
+  git clone https://github.com/pjvds/zsh-cwd $ZSH_CUSTOM/plugins/zsh-cwd
+fi
+if [[ ! -e $ZSH_CUSTOM/plugins/zsh-syntax-highlighting ]]; then
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
