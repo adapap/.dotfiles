@@ -15,20 +15,15 @@ fi
 if [[ ! -e $ZSH_CUSTOM/plugins/zsh-syntax-highlighting ]]; then
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 fi
+if [[ ! -e $ZSH_CUSTOM/plugins/fzf-zsh-plugin ]]; then
+  git clone --depth 1 https://github.com/unixorn/fzf-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
+fi
+if [[ ! -e $ZSH_CUSTOM/plugins/zsh-cwd ]]; then
+  git clone https://github.com/pjvds/zsh-cwd ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-cwd
+fi
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-plugins=(git gitfast zsh-autosuggestions zsh-syntax-highlighting fzf-zsh-plugin)
+plugins=(git gitfast zsh-autosuggestions zsh-syntax-highlighting fzf-zsh-plugin zsh-cwd)
 
 source $ZSH/oh-my-zsh.sh
 
