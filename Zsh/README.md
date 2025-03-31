@@ -8,5 +8,6 @@
 - Make sure to have `git` installed locally
 - Install `zsh` and `oh-my-zsh`
 - Download MesloLGS NF and set it as the font for the terminal
+- Configure `.zshrc` and `.p10k.zsh` to customize terminal
 
 Enjoy!
